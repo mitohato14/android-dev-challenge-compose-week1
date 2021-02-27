@@ -41,7 +41,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.androiddevchallenge.ui.common.IconImage
 import com.example.androiddevchallenge.ui.common.ImageOrPlaceholder
-import com.example.androiddevchallenge.ui.list.BreedTip
+import com.example.androiddevchallenge.ui.list.BreedChips
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
 /**
@@ -114,7 +114,7 @@ fun BasicPuppyInformation(
                 fontSize = 32.sp
             )
         )
-        BreedTip(breed = bindingModel.breed)
+        BreedChips(breed = bindingModel.breed)
         Text(
             text = "Age: ${bindingModel.age}",
             style = MaterialTheme.typography.body1.copy(

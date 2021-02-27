@@ -121,7 +121,7 @@ fun ListItem(
                     textAlign = TextAlign.Center,
                 )
             }
-            BreedTip(breed = puppyListBindingModel.breed)
+            BreedChips(breed = puppyListBindingModel.breed)
             Spacer(modifier = Modifier.size(6.dp))
             Text(
                 text = "Center: ${puppyListBindingModel.adoptionCenterName}",
@@ -132,7 +132,7 @@ fun ListItem(
 }
 
 @Composable
-fun BreedTip(breed: Breed) {
+fun BreedChips(breed: Breed) {
     Box(
         modifier = Modifier
             .background(
@@ -151,11 +151,11 @@ fun BreedTip(breed: Breed) {
     }
 }
 
-@Preview("BreedTip", showBackground = true)
+@Preview("BreedChips", showBackground = true)
 @Composable
-fun BreedTipPreview() {
+fun BreedChipsPreview() {
     MyTheme {
-        BreedTip(breed = Breed.Akita)
+        BreedChips(breed = Breed.Akita)
     }
 }
 
