@@ -58,7 +58,7 @@ class PuppyActivity : AppCompatActivity() {
 
         setContent {
             MyTheme {
-                PuppyFragmentCompose()
+                PuppyCompose()
             }
         }
     }

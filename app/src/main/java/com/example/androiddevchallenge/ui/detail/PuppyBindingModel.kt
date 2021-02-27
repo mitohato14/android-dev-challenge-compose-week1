@@ -15,6 +15,8 @@
  */
 package com.example.androiddevchallenge.ui.detail
 
+import com.example.androiddevchallenge.domain.Breed
+
 /**
  * Created by mitohato14 on 2021/02/27.
  */
@@ -23,6 +25,6 @@ data class PuppyBindingModel(
     val age: Int,
     val avatarIconImageUrl: String?,
     val adoptionCenter: AdoptionCenterBindingModel,
-    val breed: String,
+    val breed: Breed,
     val imageUrlList: List<String>
 )
