@@ -38,7 +38,7 @@ class PuppyListActivity : AppCompatActivity() {
 
         setContent {
             MyTheme {
-                PuppyListFragmentCompose()
+                PuppyListCompose()
             }
         }
     }

@@ -29,7 +29,9 @@ object DataSource {
                 id = 0,
                 name = "Akita",
                 iconImageUrl = null,
-                imageUrlList = listOf(),
+                imageUrlList = listOf(
+                    "placeholder"
+                ),
                 age = 0,
                 breed = Breed.Akita,
                 adoptionCenter = AdoptionCenter(
@@ -42,7 +44,11 @@ object DataSource {
                 id = 1,
                 name = "Collie",
                 iconImageUrl = null,
-                imageUrlList = listOf(),
+                imageUrlList = listOf(
+                    "placeholder",
+                    "placeholder",
+                    "placeholder",
+                ),
                 age = 1,
                 breed = Breed.Collie,
                 adoptionCenter = AdoptionCenter(
@@ -68,7 +74,10 @@ object DataSource {
                 id = 3,
                 name = "GoldenRetriever",
                 iconImageUrl = null,
-                imageUrlList = listOf(),
+                imageUrlList = listOf(
+                    "placeholder",
+                    "placeholder",
+                ),
                 age = 0,
                 breed = Breed.GoldenRetriever,
                 adoptionCenter = AdoptionCenter(
@@ -81,7 +90,13 @@ object DataSource {
                 id = 4,
                 name = "Shepherd",
                 iconImageUrl = null,
-                imageUrlList = listOf(),
+                imageUrlList = listOf(
+                    "placeholder",
+                    "placeholder",
+                    "placeholder",
+                    "placeholder",
+                    "placeholder",
+                ),
                 age = 1,
                 breed = Breed.Shepherd,
                 adoptionCenter = AdoptionCenter(

@@ -41,6 +41,7 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.androiddevchallenge.ui.common.IconImage
 import com.example.androiddevchallenge.ui.common.ImageOrPlaceholder
+import com.example.androiddevchallenge.ui.list.BreedTip
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
 /**
@@ -48,7 +49,7 @@ import com.example.androiddevchallenge.ui.theme.MyTheme
  */
 
 @Composable
-fun PuppyFragmentCompose() {
+fun PuppyCompose() {
     val viewModel: PuppyViewModel = viewModel()
     val puppy by viewModel.puppy.observeAsState()
     Surface(color = MaterialTheme.colors.background) {
@@ -97,7 +98,7 @@ fun PuppyContent(bindingModel: PuppyBindingModel) {
         )
 
         Spacer(modifier = Modifier.height(10.dp))
-        ImageHorizontalScollableList(imageUrlList = bindingModel.imageUrlList)
+        ImageHorizontalScrollableList(imageUrlList = bindingModel.imageUrlList)
     }
 }
 
@@ -113,6 +114,7 @@ fun BasicPuppyInformation(
                 fontSize = 32.sp
             )
         )
+        BreedTip(breed = bindingModel.breed)
         Text(
             text = "Age: ${bindingModel.age}",
             style = MaterialTheme.typography.body1.copy(
@@ -150,7 +152,7 @@ fun AdoptionCenterContent(
 }
 
 @Composable
-fun ImageHorizontalScollableList(imageUrlList: List<String>) {
+fun ImageHorizontalScrollableList(imageUrlList: List<String>) {
     LazyRow {
         items(imageUrlList) {
             Box(modifier = Modifier.padding(20.dp)) {
@@ -167,6 +169,6 @@ fun ImageHorizontalScollableList(imageUrlList: List<String>) {
 @Composable
 fun PuppyComposePreview() {
     MyTheme {
-        PuppyFragmentCompose()
+        PuppyCompose()
     }
 }

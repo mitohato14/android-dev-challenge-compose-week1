@@ -53,7 +53,7 @@ import com.example.androiddevchallenge.ui.theme.gray500
  */
 
 @Composable
-fun PuppyListFragmentCompose() {
+fun PuppyListCompose() {
     val viewModel: PuppyListViewModel = viewModel()
     val puppyList: List<PuppyListBindingModel> by viewModel.puppyList.observeAsState(listOf())
     Surface(color = MaterialTheme.colors.background) {

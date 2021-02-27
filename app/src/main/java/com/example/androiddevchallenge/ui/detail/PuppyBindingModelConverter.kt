@@ -30,6 +30,6 @@ fun Puppy.toBindingModel() = PuppyBindingModel(
         locationAddress = adoptionCenter.locationAddress,
         emailAddress = adoptionCenter.emailAddress
     ),
-    breed = breed.name,
+    breed = breed,
     imageUrlList = imageUrlList
 )
